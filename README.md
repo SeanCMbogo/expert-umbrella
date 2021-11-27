@@ -22,3 +22,7 @@ a body, and a result list
 The location of `newlines` in Go *matter*
 
 `gofmt` tool rewrites code into the standard format. `goimports` is another helpful tool
+
+# Install packages 
+`go install golang.org/x/tools/cmd/goimports@latest` 
+`go get` is no longer supported and the version must be explicitly stated

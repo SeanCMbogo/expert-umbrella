@@ -67,17 +67,17 @@ The `loop` ends when the condition becomes false.
 `initialization`, `condition`, `post` are all option for a `loop`
 
 A traditional `while` loop can be constructed as follows
-
-for `condition` {
+~~~
+for condition {
     // .. 
 }
-
+~~~
 A traditional `infinite` loop can be expressed as 
-
+~~~
 for {
     // ..
 }
-
+~~~
 The above can be escaped with a `break` or `return` statement
 
 

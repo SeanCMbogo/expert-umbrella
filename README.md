@@ -32,6 +32,17 @@ The location of `newlines` in Go **matter**
 Describe each package with a comment before the package declartion.
 `main` packages have comments describing the entire program as a whole. 
 
+# Useful Tips
+`:=` is a _short variable declaration_ which allows for the declaration of one or more variable and the assignment of the corresponding type based on the initializer value. 
+`i++` is a numeric increment statement 
+`i--` is a numeric decrement statement
+The `for` loop os the only loop statement in **Go** with various forms but with a standard structure and the opening brace must be on the same line as the post.
+~~~
+for _initalization;_ _condtion;_ post {
+    //statements here
+}
+~~~
+
 # Command-Line Arguments
 - The `os` package provides functions and other values for platform-independent OS interactions. 
 - `Command-line` arguments are available to the program in a variable called `Args` that is part of the `os` package.

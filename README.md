@@ -34,11 +34,14 @@ Describe each package with a comment before the package declartion.
 
 # Useful Tips
 `:=` is a _short variable declaration_ which allows for the declaration of one or more variable and the assignment of the corresponding type based on the initializer value. 
+
 `i++` is a numeric increment statement 
+
 `i--` is a numeric decrement statement
+
 The `for` loop os the only loop statement in **Go** with various forms but with a standard structure and the opening brace must be on the same line as the post.
 ~~~
-for _initalization;_ _condtion;_ post {
+for initalization; condtion; post {
     //statements here
 }
 ~~~

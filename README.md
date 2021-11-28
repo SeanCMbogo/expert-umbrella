@@ -17,15 +17,16 @@ A program will *NOT* compile if there are missing or unnecessary imports.
 `func`: Functions require the keyword `func`, the name of the function, a parameter list, 
 a body, and a result list 
 
-`Go` *only* requires semicolons when two or more statements or declarations appear on the same line 
+`Go` **only** requires semicolons when two or more statements or declarations appear on the same line 
 
-The location of `newlines` in Go *matter*
+The location of `newlines` in Go **matter**
 
 `gofmt` tool rewrites code into the standard format. `goimports` is another helpful tool
 
 # Installing packages 
-`go install golang.org/x/tools/cmd/goimports@latest` 
-`go get` is no longer supported and the version must be explicitly stated
+`go install golang.org/x/tools/cmd/goimports@latest`.
+
+`go get` is no longer supported and the version, `@latest` must be explicitly stated
 
 # Command-Line Arguments
 - The `os` package provides functions and other values for platform-independent OS interactions. 

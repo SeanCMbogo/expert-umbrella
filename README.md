@@ -23,6 +23,12 @@ The location of `newlines` in Go *matter*
 
 `gofmt` tool rewrites code into the standard format. `goimports` is another helpful tool
 
-# Install packages 
+# Installing packages 
 `go install golang.org/x/tools/cmd/goimports@latest` 
 `go get` is no longer supported and the version must be explicitly stated
+
+# Command-Line Arguments
+- The `os` package provides functions and other values for platform-independent OS interactions. 
+- `Command-line` arguments are available to the program in a variable called `Args` that is part of the `os` package.
+>* Use `os.args` to acces the variable outside of the `os` package 
+>* The variable `os.args` is a _slice_ of strings. *Go* _Slices_ will be discussed later but are functionally like a *Python* _List_ with some differences

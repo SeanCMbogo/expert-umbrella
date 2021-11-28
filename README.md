@@ -32,3 +32,5 @@ The location of `newlines` in Go *matter*
 - `Command-line` arguments are available to the program in a variable called `Args` that is part of the `os` package.
 >* Use `os.args` to access the variable outside of the `os` package 
 >* The variable `os.args` is a _slice_ of strings. *Go* _Slices_ will be discussed later but are functionally like a *Python* _List_ with some differences.
+>* The first element of `os.args`, `os.args[0]`, is the name of the command itself. All other elements are the arguments that were present at the start of execution. 
+>* The typical desired _slice_ is `os.args[1:]`

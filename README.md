@@ -28,6 +28,10 @@ The location of `newlines` in Go **matter**
 
 `go get` is no longer supported and the version, `@latest` must be explicitly stated
 
+# Best Practices
+Describe each package with a comment before the package declartion.
+`main` packages have comments describing the entire program as a whole. 
+
 # Command-Line Arguments
 - The `os` package provides functions and other values for platform-independent OS interactions. 
 - `Command-line` arguments are available to the program in a variable called `Args` that is part of the `os` package.

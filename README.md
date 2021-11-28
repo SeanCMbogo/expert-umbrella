@@ -23,6 +23,8 @@ The location of `newlines` in Go **matter**
 
 `gofmt` tool rewrites code into the standard format. `goimports` is another helpful tool
 
+Go does not permit unused local variables which would result in a compiliation error
+
 # Installing packages 
 `go install golang.org/x/tools/cmd/goimports@latest`.
 
@@ -32,6 +34,11 @@ The location of `newlines` in Go **matter**
 Describe each package with a comment before the package declartion.
 `main` packages have comments describing the entire program as a whole. 
 
+Use either of the two forms to initialize a variable.
+> `s: = ""`
+> `var s string` 
+The first form is when the inital value matters more, the second is when the data type matter more
+
 # Useful Tips
 `:=` is a _short variable declaration_ which allows for the declaration of one or more variable and the assignment of the corresponding type based on the initializer value. 
 
@@ -39,12 +46,40 @@ Describe each package with a comment before the package declartion.
 
 `i--` is a numeric decrement statement
 
+# Looping in Go
 The `for` loop os the only loop statement in **Go** with various forms but with a standard structure and the opening brace must be on the same line as the post.
 ~~~
-for initalization; condtion; post {
+for initialization; condtion; post {
     //statements here
 }
 ~~~
+The `initialization` is optional and is executed before the loop starts. It must be a _simple statement_ being one of the following
+>A _short variable declaration_ `i := 1`
+>An increment or assignment statemnet 
+>A function call 
+
+The `condition` is a boolean expression which is evaluated at the beginning of each loop iteration 
+
+The `post` is executed after the body of the loop then the `condition` is evaluated again. 
+
+The `loop` ends when the condition becomes false. 
+
+`initialization`, `condition`, `post` are all option for a `loop`
+
+A traditional `while` loop can be constructed as follows
+
+for `condition` {
+    // .. 
+}
+
+A traditional `infinite` loop can be expressed as 
+
+for {
+    // ..
+}
+
+The above can be escaped with a `break` or `return` statement
+
 
 # Command-Line Arguments
 - The `os` package provides functions and other values for platform-independent OS interactions. 
